@@ -4,10 +4,11 @@ shopt -s nullglob
 
 read -p "What is your key?: " ACCESS
 
-if [ "${#ACCESS}" -eq 4 ]; then
+if [ "${#ACCESS}" -eq 3 ]; then
   echo 'Valid key!'
   figlet cachePRO
-  toilet BETA
+  sleep 0.75
+  toilet 1.0
   echo 'You need these commands:'
   sleep 3
   echo 'figlet (You can install with brew install figlet command!)'
